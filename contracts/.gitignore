@@ -1,0 +1,11 @@
+# Foundry
+/out/
+/cache/
+/broadcast/
+.env
+
+# Editor
+.vscode/
+.idea/
+*.iml
+.DS_Store

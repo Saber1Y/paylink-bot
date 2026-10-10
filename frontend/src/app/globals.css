@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Monaco, "Cascadia Code", monospace;
+
+  --color-ink-950: #07080b;
+  --color-ink-900: #0c0e13;
+  --color-ink-850: #10131a;
+  --color-ink-800: #151922;
+  --color-ink-700: #1d222d;
+  --color-ink-600: #2a3040;
+  --color-line: #232836;
+  --color-muted: #8b93a7;
+
+  --color-accent-300: #a7f3cd;
+  --color-accent-400: #6ee7a8;
+  --color-accent-500: #34d98a;
+  --color-accent-600: #17a86a;
+
+  --color-warn-400: #fbbf24;
+  --color-danger-400: #f87171;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--color-ink-950);
+    color: #e7eaf0;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-accent-500);
+    color: #04120b;
+  }
+}
+
+@layer utilities {
+  .grid-band {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
